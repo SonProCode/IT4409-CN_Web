@@ -1,0 +1,137 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#navbar{
+  background-color: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+#nav-list{
+  flex-direction: row;
+  display: flex;
+}
+li{
+  list-style: none
+}
+li a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+}
+li a:hover{
+  background-color: blue;
+}
+#welcome-section{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  
+}
+
+#welcome-section h1{
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+#welcome-section p{
+  color: red;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 100;
+  
+}
+.projects{
+  margin: 0;
+  padding: 5rem 2rem;
+  text-align: center;
+  background-color: lightblue
+}
+.projects h2{
+  font-size: 3.2rem;
+  color: white;
+  text-decoration: underline;
+}
+.project-img{
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+.project-tile{
+  color: white;
+  width: 100%;
+  background-color: black;
+  margin: 0;
+  padding: 2rem 0;
+
+}
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+#contact{
+  background-color: pink;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact h2{
+  color: white;
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+#contact-header-p{
+  text-align: center;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1.5rem;
+  color:white;
+}
+
+@media (max-width: 800px){
+  h2{
+    font-size: 2rem;
+  }
+}
+
+#contact-links > a{
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+#profile-link{
+  color: blue;
+}
+
+footer {
+  text-align: center;
+  color: #999; 
+  background-color: #333; 
+  padding: 20px;
+}
+
+footer hr {
+  border: 1px solid #cc0000; 
+  margin-bottom: 10px;
+}
